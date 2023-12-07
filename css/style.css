@@ -45,10 +45,35 @@ header {
   display: block;
 }
 
+.logo-a {
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  font-size: 24px;
+  align-items: center;
+  transition: opacity 0.4s ease;
+}
+
+.logo-a:active {
+  opacity: 0.6;
+}
+
+span {
+  font-weight: light-bolder;
+  transition: color 0.3s ease;
+}
+
+span:hover {
+  color: #DE2E54;
+}
+
 .nav {
   display: flex;
   align-items: center;
 }
+
 
 .nav-items {
   display: flex;
@@ -70,7 +95,8 @@ header {
   padding: 0;
   margin-right: 32px;
   cursor: pointer;
-  transition: color 0.4s ease;
+  transition: color 0.4s ease,
+  opacity 0.4s ease;
 }
 
 .nav-items li:last-child {
@@ -79,6 +105,10 @@ header {
 
 .nav-items li:hover {
   color:#DE2E54;
+}
+
+.nav-items li:active {
+  opacity: 0.6;
 }
 
 .nav-button-a {
@@ -94,17 +124,25 @@ header {
   background-color: #DE2E54;
   border-radius: 8px;
   color: white;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   border: 2px #DE2E54 solid;
   border-radius: 8px;
   transition: background-color 0.4s ease,
-    color 0.4s ease;
+    color 0.4s ease,
+    opacity 0.4s ease;
 }
+
 
 .nav-button:hover {
   background-color: #fff;
   color: #DE2E54;
+}
+
+.nav-button:active {
+  opacity: 0.6;
+  background-color: #DE2E54;
+  color: #fff;
 }
 
 .hero {
@@ -131,6 +169,10 @@ header {
 
 .hero-button:hover {
   opacity: 0.8;
+}
+
+.hero-button:active {
+  opacity: 0.6;
 }
 
 .hero-container {
@@ -233,12 +275,17 @@ header {
   border: 2px solid white;
   border-radius: 8px;
   transition: background-color 0.4s ease,
-    border 0.3s ease;
+    border 0.3s ease,
+    opacity 0.4s ease;
 }
 
 .footer-1-a:hover {
   background-color: #DE2E54;
   border: 2px solid #DE2E54;
+}
+
+.footer-1-a:active {
+  opacity: 0.6;
 }
 
 .footer-1-a-2 {
@@ -251,12 +298,17 @@ header {
   border: 2px solid white;
   border-radius: 8px;
   transition: background-color 0.4s ease,
-    border 0.3s ease;
+    border 0.3s ease,
+    opacity 0.4s ease;
 }
 
 .footer-1-a-2:hover {
   background-color: #DE2E54;
   border: 2px solid #DE2E54;
+}
+
+.footer-1-a-2:active {
+  opacity: 0.6;
 }
 
 .footer-1-a-wrapper {
@@ -300,6 +352,11 @@ header {
   color: #DE2E54;
 }
 
+.footer-nav-items li:active {
+  color: #fff;
+  opacity: 0.6;
+}
+
 .footer-2-container {
   line-height: 47px;
   display: flex;
@@ -308,8 +365,31 @@ header {
 }
 
 .footer-logo {
-  margin: 24px 0px;
-  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 24px;
+  align-items: center;
   width: 185px;
   height: 50px;
+  margin: 21px 0px;
+  transition: opacity 0.4s ease;
+}
+
+.footer-logo:active {
+  opacity: 0.6;
+}
+
+.footer-span {
+  transition: color 0.3s ease;
+}
+
+.footer-span:hover {
+  color: #DE2E54;
+}
+
+.footer-span:active {
+  color: #fff;
 }
